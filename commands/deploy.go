@@ -212,11 +212,20 @@ func runDeployCommand(args []string, image string, fprocess string, functionName
 
 			allLabels := mergeMap(labelMap, labelArgumentMap)
 
+			// Add guaranteed invocation rate to labels
+			allLabels["realtime"] = fmt.Sprintf("%f", function.Realtime)
+
 			allEnvironment, envErr := compileEnvironment(deployFlags.envvarOpts, function.Environment, fileEnvironment)
 			if envErr != nil {
 				return envErr
 			}
 
+			// Add Maximum runtime allowed
+			if duration, ok := allEnvironment["exec_timeout"]; ok {
+				allLabels["duration"] = duration
+			} else {
+				allLabels["duration"] = "60" // default duration is 1 min
+			}
 			// Get FProcess to use from the ./template/template.yml, if a template is being used
 			if languageExistsNotDockerfile(function.Language) {
 				var fprocessErr error

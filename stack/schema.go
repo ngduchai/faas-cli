@@ -56,6 +56,9 @@ type Function struct {
 
 	// Annotations
 	Annotations *map[string]string `yaml:"annotations"`
+
+	// Guaranteed Invocation Rate
+	Realtime float32 `yaml:"realtime"`
 }
 
 // FunctionResources Memory and CPU

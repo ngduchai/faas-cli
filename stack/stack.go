@@ -92,6 +92,7 @@ func ParseYAMLData(fileData []byte, regex string, filter string, envsubst bool) 
 		if f.Language == "Dockerfile" {
 			f.Language = "dockerfile"
 		}
+		fmt.Printf("Image %s: Realtime %f\n", f.Image, f.Realtime)
 	}
 
 	if services.Provider.Name != providerName && services.Provider.Name != providerNameLong {
