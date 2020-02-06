@@ -214,6 +214,7 @@ func runDeployCommand(args []string, image string, fprocess string, functionName
 
 			// Add guaranteed invocation rate to labels
 			allLabels["realtime"] = fmt.Sprintf("%f", function.Realtime)
+			allLabels["functionsize"] = function.Requests.CPU
 
 			allEnvironment, envErr := compileEnvironment(deployFlags.envvarOpts, function.Environment, fileEnvironment)
 			if envErr != nil {

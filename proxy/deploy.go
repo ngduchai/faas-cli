@@ -17,7 +17,8 @@ import (
 )
 
 var (
-	defaultCommandTimeout = 60 * time.Second
+	//defaultCommandTimeout = 60 * time.Second
+	defaultCommandTimeout = 10 * time.Minute
 )
 
 // FunctionResourceRequest defines a request to set function resources
