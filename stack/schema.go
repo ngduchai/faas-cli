@@ -59,6 +59,12 @@ type Function struct {
 
 	// Guaranteed Invocation Rate
 	Realtime float32 `yaml:"realtime"`
+
+	// Function memory
+	Memory uint64 `yaml:"memory"`
+
+	// Function maximum duration
+	Timeout uint64 `yaml:"timeout"`
 }
 
 // FunctionResources Memory and CPU

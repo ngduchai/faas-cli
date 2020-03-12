@@ -46,6 +46,9 @@ type DeployFunctionSpec struct {
 	FunctionResourceRequest FunctionResourceRequest
 	ReadOnlyRootFilesystem  bool
 	TLSInsecure             bool
+	Realtime                float64
+	Memory                  uint64
+	Timeout                 uint64
 }
 
 // DeployFunction first tries to deploy a function and if it exists will then attempt
