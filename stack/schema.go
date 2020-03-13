@@ -58,10 +58,10 @@ type Function struct {
 	Annotations *map[string]string `yaml:"annotations"`
 
 	// Guaranteed Invocation Rate
-	Realtime float32 `yaml:"realtime"`
+	Realtime float64 `yaml:"realtime"`
 
 	// Function memory
-	Memory uint64 `yaml:"memory"`
+	Resources *FunctionResources `yaml:"resources"`
 
 	// Function maximum duration
 	Timeout uint64 `yaml:"timeout"`

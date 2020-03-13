@@ -11,6 +11,7 @@ import (
 
 	"regexp"
 
+	"github.com/openfaas/faas-cli/stack"
 	"github.com/openfaas/faas-cli/test"
 )
 
@@ -50,6 +51,9 @@ func runDeployProxyTest(t *testing.T, deployTest deployProxyTest) {
 			FunctionResourceRequest{},
 			false,
 			tlsNoVerify,
+			0,
+			&stack.FunctionResources{},
+			10,
 		})
 	})
 
@@ -112,6 +116,9 @@ func Test_DeployFunction_MissingURLPrefix(t *testing.T) {
 			FunctionResourceRequest{},
 			false,
 			tlsNoVerify,
+			0.0,
+			&stack.FunctionResources{},
+			10,
 		})
 	})
 

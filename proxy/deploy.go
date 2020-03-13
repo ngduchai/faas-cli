@@ -47,7 +47,7 @@ type DeployFunctionSpec struct {
 	ReadOnlyRootFilesystem  bool
 	TLSInsecure             bool
 	Realtime                float64
-	Memory                  uint64
+	Resources               *stack.FunctionResources
 	Timeout                 uint64
 }
 
@@ -100,6 +100,9 @@ func Deploy(spec *DeployFunctionSpec, update bool, warnInsecureGateway bool) (in
 		Labels:                 &spec.Labels,
 		Annotations:            &spec.Annotations,
 		ReadOnlyRootFilesystem: spec.ReadOnlyRootFilesystem,
+		Realtime:               spec.Realtime,
+		Resources:              &requests.FunctionResources{},
+		Timeout:                spec.Timeout,
 	}
 
 	hasLimits := false
@@ -127,6 +130,15 @@ func Deploy(spec *DeployFunctionSpec, update bool, warnInsecureGateway bool) (in
 		req.Requests.CPU = spec.FunctionResourceRequest.Requests.CPU
 	}
 
+	// Update function size
+	if spec.Resources != nil {
+		if len(spec.Resources.CPU) > 0 {
+			req.Requests.CPU = spec.Resources.CPU
+		}
+		if len(spec.Resources.Memory) > 0 {
+			req.Resources.Memory = spec.Resources.Memory
+		}
+	}
 	if !hasRequests {
 		req.Requests = nil
 	}

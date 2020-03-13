@@ -212,11 +212,6 @@ func runDeployCommand(args []string, image string, fprocess string, functionName
 
 			allLabels := mergeMap(labelMap, labelArgumentMap)
 
-			// Add guaranteed invocation rate to labels
-			allLabels["realtime"] = fmt.Sprintf("%f", function.Realtime)
-			allLabels["memory"] = fmt.Sprintf("%d", function.Memory)
-			allLabels["duration"] = fmt.Sprintf("%d", function.Timeout)
-
 			allEnvironment, envErr := compileEnvironment(deployFlags.envvarOpts, function.Environment, fileEnvironment)
 			if envErr != nil {
 				return envErr
@@ -287,6 +282,9 @@ Error: %s`, fprocessErr.Error())
 				FunctionResourceRequest: functionResourceRequest,
 				ReadOnlyRootFilesystem:  function.ReadOnlyRootFilesystem,
 				TLSInsecure:             tlsInsecure,
+				Realtime:                function.Realtime,
+				Resources:               function.Resources,
+				Timeout:                 function.Timeout,
 			}
 
 			if msg := checkTLSInsecure(deploySpec.Gateway, deploySpec.TLSInsecure); len(msg) > 0 {
@@ -384,6 +382,13 @@ func deployImage(
 		FunctionResourceRequest: proxy.FunctionResourceRequest{},
 		ReadOnlyRootFilesystem:  readOnlyRFS,
 		TLSInsecure:             tlsInsecure,
+		// Currently we do not support inline real-time
+		// requirement, only these included in YAML files
+		// are considered
+		// TODO: Implement this in future
+		Realtime:  0,
+		Resources: &stack.FunctionResources{},
+		Timeout:   3,
 	}
 
 	if msg := checkTLSInsecure(deploySpec.Gateway, deploySpec.TLSInsecure); len(msg) > 0 {
