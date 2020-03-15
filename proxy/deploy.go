@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas/gateway/requests"
+	"github.com/ngduchai/faas-cli/stack"
+	"github.com/ngduchai/faas/gateway/requests"
 )
 
 var (

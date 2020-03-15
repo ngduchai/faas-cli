@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/openfaas/faas-cli/versioncontrol"
+	"github.com/ngduchai/faas-cli/versioncontrol"
 	"github.com/spf13/cobra"
 )
 

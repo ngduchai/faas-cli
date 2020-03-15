@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/ngduchai/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/stack"
 )
 
 // AdditionalPackageBuildArg holds the special build-arg keyname for use with build-opts.

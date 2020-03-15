@@ -10,9 +10,9 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/ngduchai/faas-cli/proxy"
+	"github.com/ngduchai/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/stack"
 
 	"github.com/spf13/cobra"
 )

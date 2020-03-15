@@ -12,7 +12,7 @@ import (
 
 	"io/ioutil"
 
-	"github.com/openfaas/faas-cli/test"
+	"github.com/ngduchai/faas-cli/test"
 )
 
 func Test_preRunSecretCreate_NoArgs_Fails(t *testing.T) {

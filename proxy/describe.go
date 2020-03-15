@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"path"
 
-	"github.com/openfaas/faas/gateway/requests"
+	"github.com/ngduchai/faas/gateway/requests"
 )
 
 //GetFunctionInfo get an OpenFaaS function information

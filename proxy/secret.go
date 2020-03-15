@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/openfaas/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/schema"
 )
 
 // GetSecretList get secrets list

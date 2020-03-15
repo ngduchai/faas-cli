@@ -10,8 +10,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/proxy"
+	"github.com/ngduchai/faas-cli/schema"
 	"github.com/spf13/cobra"
 )
 

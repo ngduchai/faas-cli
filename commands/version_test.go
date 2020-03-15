@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/openfaas/faas-cli/test"
-	"github.com/openfaas/faas-cli/version"
+	"github.com/ngduchai/faas-cli/test"
+	"github.com/ngduchai/faas-cli/version"
 )
 
 func Test_addVersionDev(t *testing.T) {

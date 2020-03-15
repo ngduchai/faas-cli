@@ -16,10 +16,10 @@ import (
 
 	"github.com/docker/docker-credential-helpers/client"
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/ngduchai/faas-cli/builder"
+	"github.com/ngduchai/faas-cli/proxy"
+	"github.com/ngduchai/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/stack"
 	"github.com/spf13/cobra"
 	yaml "gopkg.in/yaml.v2"
 )

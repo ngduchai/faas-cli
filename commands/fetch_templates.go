@@ -10,8 +10,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/versioncontrol"
+	"github.com/ngduchai/faas-cli/builder"
+	"github.com/ngduchai/faas-cli/versioncontrol"
 )
 
 // DefaultTemplateRepository contains the Git repo for the official templates

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/openfaas/faas-cli/config"
+	"github.com/ngduchai/faas-cli/config"
 	"github.com/spf13/cobra"
 )
 

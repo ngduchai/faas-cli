@@ -10,9 +10,9 @@ import (
 	"os"
 
 	"github.com/morikuni/aec"
-	"github.com/openfaas/faas-cli/proxy"
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas-cli/version"
+	"github.com/ngduchai/faas-cli/proxy"
+	"github.com/ngduchai/faas-cli/stack"
+	"github.com/ngduchai/faas-cli/version"
 	"github.com/spf13/cobra"
 )
 

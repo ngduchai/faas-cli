@@ -4,7 +4,7 @@
 package commands
 
 import (
-	"github.com/openfaas/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/schema"
 	"github.com/spf13/cobra"
 )
 

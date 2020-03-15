@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/versioncontrol"
+	"github.com/ngduchai/faas-cli/builder"
+	"github.com/ngduchai/faas-cli/versioncontrol"
 )
 
 func Test_PullTemplates(t *testing.T) {

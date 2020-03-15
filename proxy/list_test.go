@@ -10,8 +10,8 @@ import (
 
 	"testing"
 
-	"github.com/openfaas/faas-cli/test"
-	"github.com/openfaas/faas/gateway/requests"
+	"github.com/ngduchai/faas-cli/test"
+	"github.com/ngduchai/faas/gateway/requests"
 )
 
 func Test_ListFunctions(t *testing.T) {

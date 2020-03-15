@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/openfaas/faas-cli/test"
+	"github.com/ngduchai/faas-cli/test"
 )
 
 func Test_storeDeploy_withNameFlag(t *testing.T) {

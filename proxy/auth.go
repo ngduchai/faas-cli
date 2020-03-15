@@ -6,7 +6,7 @@ package proxy
 import (
 	"net/http"
 
-	"github.com/openfaas/faas-cli/config"
+	"github.com/ngduchai/faas-cli/config"
 )
 
 //SetAuth sets basic auth for the given gateway

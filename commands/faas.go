@@ -9,7 +9,7 @@ import (
 	"strings"
 
 	"github.com/docker/docker/pkg/term"
-	"github.com/openfaas/faas-cli/version"
+	"github.com/ngduchai/faas-cli/version"
 	"github.com/spf13/cobra"
 )
 

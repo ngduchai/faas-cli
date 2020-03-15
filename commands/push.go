@@ -9,9 +9,9 @@ import (
 	"sync"
 
 	"github.com/morikuni/aec"
-	"github.com/openfaas/faas-cli/builder"
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/stack"
+	"github.com/ngduchai/faas-cli/builder"
+	"github.com/ngduchai/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/stack"
 	"github.com/spf13/cobra"
 )
 

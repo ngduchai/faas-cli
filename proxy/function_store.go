@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/openfaas/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/schema"
 )
 
 // FunctionStoreList returns functions from a store URL

@@ -1,43 +1,82 @@
-[prune]
-  go-tests = true
-  unused-packages = true
+# Gopkg.toml example
+#
+# Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
+# for detailed Gopkg.toml documentation.
+#
+# required = ["github.com/user/thing/cmd/thing"]
+# ignored = ["github.com/user/project/pkgX", "bitbucket.org/user/project/pkgA/pkgY"]
+#
+# [[constraint]]
+#   name = "github.com/user/project"
+#   version = "1.0.0"
+#
+# [[constraint]]
+#   name = "github.com/user/project2"
+#   branch = "dev"
+#   source = "github.com/myfork/project2"
+#
+# [[override]]
+#   name = "github.com/x/y"
+#   version = "2.4.0"
+#
+# [prune]
+#   non-go = false
+#   go-tests = true
+#   unused-packages = true
+
 
 [[constraint]]
-  name = "github.com/mitchellh/go-homedir"
-  revision = "b8bc1bf767474819792c23f32d8286a45736f1c6"
-
-[[constraint]]
-  name = "github.com/morikuni/aec"
-  revision = "39771216ff4c63d11f5e604076f9c45e8be1067b"
-
-[[constraint]]
-  name = "github.com/openfaas/faas"
-  version = "0.8.8"
-
-[[constraint]]
-  name = "github.com/spf13/cobra"
-  version = "0.0.3"
-
-[[constraint]]
-  name = "github.com/spf13/pflag"
-  version = "1.0.2"
-
-[[constraint]]
-  name = "github.com/ryanuber/go-glob"
-  revision = "256dc444b735e061061cf46c809487313d5b0065"
-
-[[constraint]]
-  name = "gopkg.in/yaml.v2"
-  revision = "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b"
+  name = "github.com/alexellis/hmac"
+  version = "1.2.0"
 
 [[constraint]]
   name = "github.com/docker/docker"
-  version = "1.13.1"
+  version = "19.3.8"
+
+[[constraint]]
+  name = "github.com/docker/docker-credential-helpers"
+  version = "0.6.3"
 
 [[constraint]]
   name = "github.com/drone/envsubst"
   version = "1.0.2"
 
 [[constraint]]
+  name = "github.com/mitchellh/go-homedir"
+  version = "1.1.0"
+
+[[constraint]]
+  name = "github.com/morikuni/aec"
+  version = "1.0.0"
+
+[[constraint]]
+  name = "github.com/ngduchai/faas"
+  branch = "memory-based-replicas"
+
+[[constraint]]
+  name = "github.com/openfaas/faas-cli"
+  version = "0.12.0"
+
+[[constraint]]
   name = "github.com/pkg/errors"
-  version = "0.8.1"
+  version = "0.9.1"
+
+[[constraint]]
+  name = "github.com/ryanuber/go-glob"
+  version = "1.0.0"
+
+[[constraint]]
+  name = "github.com/spf13/cobra"
+  version = "0.0.6"
+
+[[constraint]]
+  name = "github.com/spf13/pflag"
+  version = "1.0.5"
+
+[[constraint]]
+  name = "gopkg.in/yaml.v2"
+  version = "2.2.8"
+
+[prune]
+  go-tests = true
+  unused-packages = true

@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/openfaas/faas/gateway/requests"
+	"github.com/ngduchai/faas/gateway/requests"
 )
 
 // ListFunctions list deployed functions

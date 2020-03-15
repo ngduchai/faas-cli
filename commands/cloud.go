@@ -12,7 +12,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/openfaas/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/schema"
 	"github.com/spf13/cobra"
 )
 

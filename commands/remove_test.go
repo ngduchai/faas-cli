@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/openfaas/faas-cli/test"
+	"github.com/ngduchai/faas-cli/test"
 )
 
 func Test_remove(t *testing.T) {

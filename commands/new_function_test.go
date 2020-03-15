@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openfaas/faas-cli/stack"
-	"github.com/openfaas/faas-cli/test"
+	"github.com/ngduchai/faas-cli/stack"
+	"github.com/ngduchai/faas-cli/test"
 )
 
 const (

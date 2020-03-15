@@ -10,7 +10,7 @@ import (
 
 	"io/ioutil"
 
-	"github.com/openfaas/faas-cli/config"
+	"github.com/ngduchai/faas-cli/config"
 )
 
 func Test_SetAuth_AuthorizationHeader(t *testing.T) {

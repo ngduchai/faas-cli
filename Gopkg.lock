@@ -13,14 +13,6 @@
   revision = "d6e3b3328b783f23731bc4d058875b0371ff8109"
 
 [[projects]]
-  digest = "1:5622116f2c79239f2d25d47b881e14f96a8b8c17b63b8a8326a38ee1a332b007"
-  name = "github.com/Sirupsen/logrus"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "d682213848ed68c0a260ca37d6dd5ace8423f5ba"
-  version = "v1.0.4"
-
-[[projects]]
   digest = "1:871b7cfa5fe18bfdbd4bf117c166c3cff8d3b61c8afe4e998b5b8ac0c160ca24"
   name = "github.com/alexellis/hmac"
   packages = ["."]
@@ -29,26 +21,26 @@
   version = "1.2"
 
 [[projects]]
-  digest = "1:53e99d883df3e940f5f0223795f300eb32b8c044f226132bfc0e74930f24ea4b"
+  digest = "1:24707d294969fa43293e4a840e76f30b27a26bc712709640a1c5be93a1e1af93"
   name = "github.com/docker/docker"
   packages = [
     "pkg/term",
     "pkg/term/windows",
   ]
   pruneopts = "UT"
-  revision = "092cba3727bb9b4a2f0e922cd6c0f93ea270e363"
-  version = "v1.13.1"
+  revision = "aa6a9891b09cce3d9004121294301a30d45d998d"
+  version = "v19.03.8"
 
 [[projects]]
-  digest = "1:8866486038791fe65ea1abf660041423954b1f3fb99ea6a0ad8424422e943458"
+  digest = "1:9f3f49b4e32d3da2dd6ed07cc568627b53cc80205c0dcf69f4091f027416cb60"
   name = "github.com/docker/docker-credential-helpers"
   packages = [
     "client",
     "credentials",
   ]
   pruneopts = "UT"
-  revision = "5241b46610f2491efdf9d1c85f1ddf5b02f6d962"
-  version = "v0.6.1"
+  revision = "54f0238b6bf101fc3ad3b34114cb5520beb562f5"
+  version = "v0.6.3"
 
 [[projects]]
   digest = "1:c150032ad5f0d37e884ce6428425292f1f866fd9c3fc4661a1ca539fda85460c"
@@ -71,11 +63,20 @@
   version = "v1.0"
 
 [[projects]]
-  digest = "1:12ae6210bdbdad658a9a67fd95cd9c99f7fdbf12f6d36eaf0af704e69dacf4f5"
+  digest = "1:31e761d97c76151dde79e9d28964a812c46efc5baee4085b86f68f0c654450de"
+  name = "github.com/konsorten/go-windows-terminal-sequences"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "f55edac94c9bbba5d6182a4be46d86a2c9b5b50e"
+  version = "v1.0.2"
+
+[[projects]]
+  digest = "1:5d231480e1c64a726869bc4142d270184c419749d34f167646baa21008eb0a79"
   name = "github.com/mitchellh/go-homedir"
   packages = ["."]
   pruneopts = "UT"
-  revision = "b8bc1bf767474819792c23f32d8286a45736f1c6"
+  revision = "af06845cf3004701891bf4fdb884bfe4920b3727"
+  version = "v1.1.0"
 
 [[projects]]
   digest = "1:906eb1ca3c8455e447b99a45237b2b9615b665608fd07ad12cce847dd9a1ec43"
@@ -83,71 +84,78 @@
   packages = ["."]
   pruneopts = "UT"
   revision = "39771216ff4c63d11f5e604076f9c45e8be1067b"
+  version = "v1.0.0"
 
 [[projects]]
-  digest = "1:cd4844d2c87206efa7faa9ea920f936e4f16512ac3fa342e7534dfb6d804a63b"
-  name = "github.com/openfaas/faas"
+  branch = "memory-based-replicas"
+  digest = "1:4b4437d54a4d9da5517aaad05e50773b235b65efad231632a44a3dfe1c818f49"
+  name = "github.com/ngduchai/faas"
   packages = ["gateway/requests"]
   pruneopts = "UT"
-  revision = "4cbb7d968d21f4ae2daacfb27213c9371d4d4449"
-  version = "0.8.8"
+  revision = "630ef6ed38e837f0ce9fa0441ee3ee382d87ede2"
 
 [[projects]]
-  digest = "1:cf31692c14422fa27c83a05292eb5cbe0fb2775972e8f1f8446a71549bd8980b"
+  digest = "1:ceaeb1f6ac5d91128460f2acc6655753f5d0a36bae3313df9840891028ba3aa8"
+  name = "github.com/openfaas/faas-cli"
+  packages = ["test"]
+  pruneopts = "UT"
+  revision = "b0a70a3f4f20d986ce12aff4216b3e7e07c0c44f"
+  version = "0.12.0"
+
+[[projects]]
+  digest = "1:9e1d37b58d17113ec3cb5608ac0382313c5b59470b94ed97d0976e69c7022314"
   name = "github.com/pkg/errors"
   packages = ["."]
   pruneopts = "UT"
-  revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
-  version = "v0.8.1"
+  revision = "614d223910a179a466c1767a985424175c39b465"
+  version = "v0.9.1"
 
 [[projects]]
-  digest = "1:5b92d232e81c3e8eec282c92dcaa2e0e1ad3c23157be19a01b3e33f7e6e8d137"
+  digest = "1:6baa565fe16f8657cf93469b2b8a6c61a277827734400d27e44d589547297279"
   name = "github.com/ryanuber/go-glob"
   packages = ["."]
   pruneopts = "UT"
-  revision = "256dc444b735e061061cf46c809487313d5b0065"
+  revision = "51a8f68e6c24dc43f1e371749c89a267de4ebc53"
+  version = "v1.0.0"
 
 [[projects]]
-  digest = "1:645cabccbb4fa8aab25a956cbcbdf6a6845ca736b2c64e197ca7cbb9d210b939"
+  digest = "1:fd61cf4ae1953d55df708acb6b91492d538f49c305b364a014049914495db426"
+  name = "github.com/sirupsen/logrus"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8bdbc7bcc01dcbb8ec23dc8a28e332258d25251f"
+  version = "v1.4.1"
+
+[[projects]]
+  digest = "1:6a13467c76490975b05609344b3d882a9185fd11a44a04ede7427d684e0819b9"
   name = "github.com/spf13/cobra"
   packages = ["."]
   pruneopts = "UT"
-  revision = "ef82de70bb3f60c65fb8eebacbb2d122ef517385"
-  version = "v0.0.3"
+  revision = "0da06874266c88228b8f14615396a1f6bfc90ed7"
+  version = "v0.0.6"
 
 [[projects]]
-  digest = "1:dab83a1bbc7ad3d7a6ba1a1cc1760f25ac38cdf7d96a5cdd55cd915a4f5ceaf9"
+  digest = "1:524b71991fc7d9246cc7dc2d9e0886ccb97648091c63e30eef619e6862c955dd"
   name = "github.com/spf13/pflag"
   packages = ["."]
   pruneopts = "UT"
-  revision = "9a97c102cda95a86cec2345a6f09f55a939babf5"
-  version = "v1.0.2"
+  revision = "2e9d26c8c37aae03e3f9d4e90b7116f5accb7cab"
+  version = "v1.0.5"
 
 [[projects]]
-  branch = "master"
-  digest = "1:707ec3bb6ccc1cd330b8789467fa6cd8dad40f63fed028ba777a6c2ca13a9838"
-  name = "golang.org/x/crypto"
-  packages = ["ssh/terminal"]
-  pruneopts = "UT"
-  revision = "d94f6bc902c2970500950e88ab1a54a0c26bec48"
-
-[[projects]]
-  branch = "master"
-  digest = "1:322dcd045c1f20b4604d829832fbbb7cb29f2f7615179736c57b4f2a4ca25ee3"
+  digest = "1:8f5108406bc43c7669b0d67d282e40d05c9f268615fcaf8c1f0f76965aa3f09f"
   name = "golang.org/x/sys"
-  packages = [
-    "unix",
-    "windows",
-  ]
+  packages = ["unix"]
   pruneopts = "UT"
-  revision = "af50095a40f9041b3b38960738837185c26e9419"
+  revision = "4c4f7f33c9ed00de01c4c741d2177abfcfe19307"
 
 [[projects]]
-  digest = "1:35c04c23c8aef680782e117c67e29750453c92d11448da616d2e399887e5fc86"
+  digest = "1:55b110c99c5fdc4f14930747326acce56b52cfce60b24b1c03ef686ac0e46bb1"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
   pruneopts = "UT"
-  revision = "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b"
+  revision = "53403b58ad1b561927d19068c655246f2db79d48"
+  version = "v2.2.8"
 
 [solve-meta]
   analyzer-name = "dep"
@@ -159,7 +167,8 @@
     "github.com/drone/envsubst",
     "github.com/mitchellh/go-homedir",
     "github.com/morikuni/aec",
-    "github.com/openfaas/faas/gateway/requests",
+    "github.com/ngduchai/faas/gateway/requests",
+    "github.com/openfaas/faas-cli/test",
     "github.com/pkg/errors",
     "github.com/ryanuber/go-glob",
     "github.com/spf13/cobra",

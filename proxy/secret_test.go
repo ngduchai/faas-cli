@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/openfaas/faas-cli/schema"
-	"github.com/openfaas/faas-cli/test"
+	"github.com/ngduchai/faas-cli/schema"
+	"github.com/ngduchai/faas-cli/test"
 )
 
 func Test_GetSecretList_200OK(t *testing.T) {
