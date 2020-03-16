@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openfaas/faas-cli/test"
+	"github.com/ngduchai/faas-cli/test"
 )
 
 func Test_deploy(t *testing.T) {
