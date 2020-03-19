@@ -133,7 +133,7 @@ func Deploy(spec *DeployFunctionSpec, update bool, warnInsecureGateway bool) (in
 	// Update function size
 	if spec.Resources != nil {
 		if len(spec.Resources.CPU) > 0 {
-			req.Requests.CPU = spec.Resources.CPU
+			req.Resources.CPU = spec.Resources.CPU
 		}
 		if len(spec.Resources.Memory) > 0 {
 			req.Resources.Memory = spec.Resources.Memory
@@ -142,7 +142,14 @@ func Deploy(spec *DeployFunctionSpec, update bool, warnInsecureGateway bool) (in
 	if !hasRequests {
 		req.Requests = nil
 	}
-
+	if req.Limits != nil {
+		fmt.Println("Limit", req.Limits.CPU, req.Limits.Memory)
+	} else {
+		fmt.Println("No limits")
+	}
+	if req.Resources != nil {
+		fmt.Println("Resources", req.Resources.CPU, req.Resources.Memory)
+	}
 	reqBytes, _ := json.Marshal(&req)
 	reader := bytes.NewReader(reqBytes)
 	var request *http.Request
